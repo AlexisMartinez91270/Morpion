@@ -7,6 +7,7 @@ function setSymbol(btn, symbole) {
 }
 
 function rechercherVainqueur(pions, joueurs, tour) {
+  // Lignes
   if (
     pions[0].innerHTML == joueurs[tour] &&
     pions[1].innerHTML == joueurs[tour] &&
@@ -19,79 +20,257 @@ function rechercherVainqueur(pions, joueurs, tour) {
   }
 
   if (
-    pions[3].innerHTML == joueurs[tour] &&
-    pions[4].innerHTML == joueurs[tour] &&
-    pions[5].innerHTML == joueurs[tour]
+    pions[1].innerHTML == joueurs[tour] &&
+    pions[2].innerHTML == joueurs[tour] &&
+    pions[3].innerHTML == joueurs[tour]
   ) {
+    pions[1].style.backgroundColor = "#9ACD32";
+    pions[2].style.backgroundColor = "#9ACD32";
     pions[3].style.backgroundColor = "#9ACD32";
-    pions[4].style.backgroundColor = "#9ACD32";
-    pions[5].style.backgroundColor = "#9ACD32";
     return true;
   }
 
   if (
-    pions[6].innerHTML == joueurs[tour] &&
-    pions[7].innerHTML == joueurs[tour] &&
-    pions[8].innerHTML == joueurs[tour]
+    pions[4].innerHTML == joueurs[tour] &&
+    pions[5].innerHTML == joueurs[tour] &&
+    pions[6].innerHTML == joueurs[tour]
   ) {
+    pions[4].style.backgroundColor = "#9ACD32";
+    pions[5].style.backgroundColor = "#9ACD32";
+    pions[6].style.backgroundColor = "#9ACD32";
+    return true;
+  }
+
+  if (
+    pions[5].innerHTML == joueurs[tour] &&
+    pions[6].innerHTML == joueurs[tour] &&
+    pions[7].innerHTML == joueurs[tour]
+  ) {
+    pions[5].style.backgroundColor = "#9ACD32";
     pions[6].style.backgroundColor = "#9ACD32";
     pions[7].style.backgroundColor = "#9ACD32";
+    return true;
+  }
+
+  if (
+    pions[8].innerHTML == joueurs[tour] &&
+    pions[9].innerHTML == joueurs[tour] &&
+    pions[10].innerHTML == joueurs[tour]
+  ) {
+    pions[8].style.backgroundColor = "#9ACD32";
+    pions[9].style.backgroundColor = "#9ACD32";
+    pions[10].style.backgroundColor = "#9ACD32";
+    return true;
+  }
+
+  if (
+    pions[9].innerHTML == joueurs[tour] &&
+    pions[10].innerHTML == joueurs[tour] &&
+    pions[11].innerHTML == joueurs[tour]
+  ) {
+    pions[9].style.backgroundColor = "#9ACD32";
+    pions[10].style.backgroundColor = "#9ACD32";
+    pions[11].style.backgroundColor = "#9ACD32";
+    return true;
+  }
+
+  if (
+    pions[12].innerHTML == joueurs[tour] &&
+    pions[13].innerHTML == joueurs[tour] &&
+    pions[14].innerHTML == joueurs[tour]
+  ) {
+    pions[12].style.backgroundColor = "#9ACD32";
+    pions[13].style.backgroundColor = "#9ACD32";
+    pions[14].style.backgroundColor = "#9ACD32";
+    return true;
+  }
+
+  if (
+    pions[13].innerHTML == joueurs[tour] &&
+    pions[14].innerHTML == joueurs[tour] &&
+    pions[15].innerHTML == joueurs[tour]
+  ) {
+    pions[13].style.backgroundColor = "#9ACD32";
+    pions[14].style.backgroundColor = "#9ACD32";
+    pions[15].style.backgroundColor = "#9ACD32";
+    return true;
+  }
+
+  // Colonnes
+  if (
+    pions[0].innerHTML == joueurs[tour] &&
+    pions[4].innerHTML == joueurs[tour] &&
+    pions[8].innerHTML == joueurs[tour]
+  ) {
+    pions[0].style.backgroundColor = "#9ACD32";
+    pions[4].style.backgroundColor = "#9ACD32";
     pions[8].style.backgroundColor = "#9ACD32";
     return true;
   }
 
   if (
-    pions[0].innerHTML == joueurs[tour] &&
-    pions[3].innerHTML == joueurs[tour] &&
-    pions[6].innerHTML == joueurs[tour]
+    pions[4].innerHTML == joueurs[tour] &&
+    pions[8].innerHTML == joueurs[tour] &&
+    pions[12].innerHTML == joueurs[tour]
   ) {
-    pions[0].style.backgroundColor = "#9ACD32";
-    pions[3].style.backgroundColor = "#9ACD32";
-    pions[6].style.backgroundColor = "#9ACD32";
+    pions[4].style.backgroundColor = "#9ACD32";
+    pions[8].style.backgroundColor = "#9ACD32";
+    pions[12].style.backgroundColor = "#9ACD32";
     return true;
   }
 
   if (
     pions[1].innerHTML == joueurs[tour] &&
-    pions[4].innerHTML == joueurs[tour] &&
-    pions[7].innerHTML == joueurs[tour]
+    pions[5].innerHTML == joueurs[tour] &&
+    pions[9].innerHTML == joueurs[tour]
   ) {
     pions[1].style.backgroundColor = "#9ACD32";
-    pions[4].style.backgroundColor = "#9ACD32";
-    pions[7].style.backgroundColor = "#9ACD32";
+    pions[5].style.backgroundColor = "#9ACD32";
+    pions[9].style.backgroundColor = "#9ACD32";
+    return true;
+  }
+
+  if (
+    pions[5].innerHTML == joueurs[tour] &&
+    pions[9].innerHTML == joueurs[tour] &&
+    pions[13].innerHTML == joueurs[tour]
+  ) {
+    pions[5].style.backgroundColor = "#9ACD32";
+    pions[9].style.backgroundColor = "#9ACD32";
+    pions[13].style.backgroundColor = "#9ACD32";
     return true;
   }
 
   if (
     pions[2].innerHTML == joueurs[tour] &&
-    pions[5].innerHTML == joueurs[tour] &&
-    pions[8].innerHTML == joueurs[tour]
+    pions[6].innerHTML == joueurs[tour] &&
+    pions[10].innerHTML == joueurs[tour]
   ) {
     pions[2].style.backgroundColor = "#9ACD32";
-    pions[5].style.backgroundColor = "#9ACD32";
-    pions[8].style.backgroundColor = "#9ACD32";
+    pions[6].style.backgroundColor = "#9ACD32";
+    pions[10].style.backgroundColor = "#9ACD32";
+    return true;
+  }
+
+  if (
+    pions[6].innerHTML == joueurs[tour] &&
+    pions[10].innerHTML == joueurs[tour] &&
+    pions[14].innerHTML == joueurs[tour]
+  ) {
+    pions[6].style.backgroundColor = "#9ACD32";
+    pions[10].style.backgroundColor = "#9ACD32";
+    pions[14].style.backgroundColor = "#9ACD32";
+    return true;
+  }
+
+  if (
+    pions[3].innerHTML == joueurs[tour] &&
+    pions[7].innerHTML == joueurs[tour] &&
+    pions[11].innerHTML == joueurs[tour]
+  ) {
+    pions[3].style.backgroundColor = "#9ACD32";
+    pions[7].style.backgroundColor = "#9ACD32";
+    pions[11].style.backgroundColor = "#9ACD32";
+    return true;
+  }
+
+  if (
+    pions[7].innerHTML == joueurs[tour] &&
+    pions[11].innerHTML == joueurs[tour] &&
+    pions[15].innerHTML == joueurs[tour]
+  ) {
+    pions[7].style.backgroundColor = "#9ACD32";
+    pions[11].style.backgroundColor = "#9ACD32";
+    pions[15].style.backgroundColor = "#9ACD32";
+    return true;
+  }
+
+  // Croisés
+  if (
+    pions[1].innerHTML == joueurs[tour] &&
+    pions[6].innerHTML == joueurs[tour] &&
+    pions[11].innerHTML == joueurs[tour]
+  ) {
+    pions[1].style.backgroundColor = "#9ACD32";
+    pions[6].style.backgroundColor = "#9ACD32";
+    pions[11].style.backgroundColor = "#9ACD32";
     return true;
   }
 
   if (
     pions[0].innerHTML == joueurs[tour] &&
-    pions[4].innerHTML == joueurs[tour] &&
-    pions[8].innerHTML == joueurs[tour]
+    pions[5].innerHTML == joueurs[tour] &&
+    pions[10].innerHTML == joueurs[tour]
   ) {
     pions[0].style.backgroundColor = "#9ACD32";
-    pions[4].style.backgroundColor = "#9ACD32";
-    pions[8].style.backgroundColor = "#9ACD32";
+    pions[5].style.backgroundColor = "#9ACD32";
+    pions[10].style.backgroundColor = "#9ACD32";
     return true;
   }
 
   if (
-    pions[2].innerHTML == joueurs[tour] &&
+    pions[5].innerHTML == joueurs[tour] &&
+    pions[10].innerHTML == joueurs[tour] &&
+    pions[15].innerHTML == joueurs[tour]
+  ) {
+    pions[5].style.backgroundColor = "#9ACD32";
+    pions[10].style.backgroundColor = "#9ACD32";
+    pions[15].style.backgroundColor = "#9ACD32";
+    return true;
+  }
+
+  if (
     pions[4].innerHTML == joueurs[tour] &&
+    pions[9].innerHTML == joueurs[tour] &&
+    pions[14].innerHTML == joueurs[tour]
+  ) {
+    pions[4].style.backgroundColor = "#9ACD32";
+    pions[9].style.backgroundColor = "#9ACD32";
+    pions[14].style.backgroundColor = "#9ACD32";
+    return true;
+  }
+
+  if (
+    pions[8].innerHTML == joueurs[tour] &&
+    pions[5].innerHTML == joueurs[tour] &&
+    pions[2].innerHTML == joueurs[tour]
+  ) {
+    pions[8].style.backgroundColor = "#9ACD32";
+    pions[5].style.backgroundColor = "#9ACD32";
+    pions[2].style.backgroundColor = "#9ACD32";
+    return true;
+  }
+
+  if (
+    pions[12].innerHTML == joueurs[tour] &&
+    pions[9].innerHTML == joueurs[tour] &&
     pions[6].innerHTML == joueurs[tour]
   ) {
-    pions[2].style.backgroundColor = "#9ACD32";
-    pions[4].style.backgroundColor = "#9ACD32";
+    pions[12].style.backgroundColor = "#9ACD32";
+    pions[9].style.backgroundColor = "#9ACD32";
     pions[6].style.backgroundColor = "#9ACD32";
+    return true;
+  }
+
+  if (
+    pions[9].innerHTML == joueurs[tour] &&
+    pions[6].innerHTML == joueurs[tour] &&
+    pions[3].innerHTML == joueurs[tour]
+  ) {
+    pions[9].style.backgroundColor = "#9ACD32";
+    pions[6].style.backgroundColor = "#9ACD32";
+    pions[3].style.backgroundColor = "#9ACD32";
+    return true;
+  }
+
+  if (
+    pions[13].innerHTML == joueurs[tour] &&
+    pions[10].innerHTML == joueurs[tour] &&
+    pions[7].innerHTML == joueurs[tour]
+  ) {
+    pions[13].style.backgroundColor = "#9ACD32";
+    pions[10].style.backgroundColor = "#9ACD32";
+    pions[17].style.backgroundColor = "#9ACD32";
     return true;
   }
 }
@@ -143,14 +322,14 @@ function main() {
           afficheur.sendMessage(
             "Le joueur " +
               joueurs[tour] +
-              ' a gagné ! <br /> <a href="http://127.0.0.1:5500/index.html">Rejouer</a>'
+              ' a gagné ! <br /> <a href="index.html">Rejouer</a>'
           );
           return;
         }
 
         if (matchNul(pions)) {
           afficheur.sendMessage(
-            'Match Nul ! <br/> <a href="http://127.0.0.1:5500/index.html">Rejouer</a>'
+            'Match Nul ! <br/> <a href="index.html">Rejouer</a>'
           );
           return;
         }
